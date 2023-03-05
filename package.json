@@ -1,0 +1,25 @@
+{
+  "name": "@permissivelabs/landing",
+  "version": "0.0.1",
+  "description": "The permissive labs landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/permissivelabs/landing.git"
+  },
+  "author": "Flydexo",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/permissivelabs/landing/issues"
+  },
+  "homepage": "https://github.com/permissivelabs/landing#readme",
+  "dependencies": {
+    "astro": "^2.0.17"
+  }
+}
