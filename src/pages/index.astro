@@ -9,25 +9,54 @@ import buildingEmoji from "../assets/images/building.png";
 import twitterIcon from "../assets/images/twitter.svg";
 import githubIcon from "../assets/images/github.svg";
 import mediumIcon from "../assets/images/medium.svg";
+import { SEO } from "astro-seo";
 ---
 
-<html>
+<html lang="en">
   <head>
-    <title>Permissive</title>
+    <SEO
+      title="Permissive"
+      description="Permissive is an authorization framework built with Account Abstraction (ERC-4337). It allows services to request specific permissions from users. Once a service has been granted the required permissions, it can perform allowed actions on behalf of the user in the form of UserOperations."
+      charset="UTF-8"
+      openGraph={{
+        basic: {
+          title: "Control your Smart Account with Permissive",
+          type: "image",
+          image: "/banner.png",
+        },
+        image: {
+          alt: "The Permissive slogan",
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: "@permissivelabs",
+        creator: "@Flydex0",
+        description:
+          "Permissive is an authorization framework built with Account Abstraction (ERC-4337). It allows services to request specific permissions from users.",
+        imageAlt: "The Permissive slogan",
+      }}
+    />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href={logo} type="image/x-icon" />
   </head>
   <body class="bg-black overflow-hidden">
     <div class="w-screen h-screen overflow-hidden blur-[150px] absolute z-0">
       <img
         src={red}
+        alt="red bulb"
         class="absolute top-[20%] left-[-30%] w-[81vw] md:w-[50vw]"
       />
       <img
         src={yellow}
+        alt="yellow bulb"
         class="absolute top-[-10%] md:top-[-30%] right-[-50%] w-[100vw] md:w-[70vw]"
       />
       <img
         src={green}
+        alt="green bulb"
         class="absolute bottom-[-10%] md:bottom-[-40%] right-[-5%] w-[81vw] md:w-[50vw]"
       />
     </div>
@@ -52,13 +81,8 @@ import mediumIcon from "../assets/images/medium.svg";
             >
           </h3>
         </div>
-        <h3 class="text-3xl font-bold flex gap-2">
-          <img
-            src={buildingEmoji}
-            alt="construction sign apple"
-            height="32"
-            width="32"
-          />
+        <h3 class="text-3xl font-bold flex items-center gap-2">
+          <img src={buildingEmoji} alt="construction sign apple" width="36" />
           Currently building
         </h3>
         <div class="flex items-center gap-6">
