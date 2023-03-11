@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://permissive.dev/sitemap-index.xml
